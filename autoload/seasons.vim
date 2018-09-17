@@ -29,6 +29,24 @@ function! seasons#GetColorScheme()
   return schemeNameDict[month]
 endfunction
 
+function! seasons#GetSchemeNameDict()
+  let schemeNameDict = {
+        \ '01': 'hydrangea',
+        \ '02': 'iceberg',
+        \ '03': 'SerialExperimentsLain',
+        \ '04': 'ubaryd',
+        \ '05': 'landscape',
+        \ '06': 'jellybeans',
+        \ '07': 'quantum',
+        \ '08': 'vitamins',
+        \ '09': 'moonshine',
+        \ '10': 'farout',
+        \ '11': 'vividchalk',
+        \ '12': 'lucario',
+  \ }
+  return schemeNameDict
+endfunction
+
 function! seasons#GetMonth()
   let now = localtime()
   let month = strftime("%m", now)
