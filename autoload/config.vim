@@ -9,7 +9,6 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! seasons#GetSchemeNameDict()
-  runtime! $HOME/seasons-config.vim
   let schemeNameDict = {
         \ '01': 'hydrangea',
         \ '02': 'iceberg',
